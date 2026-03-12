@@ -43,6 +43,7 @@ let package = Package(
                 .unsafeFlags([
                     "-L/opt/homebrew/lib",
                     "-lgobject-2.0",
+                    "-lgmodule-2.0",
                     "-lglib-2.0",
                     "-lintl",
                     "-lplist-2.0",

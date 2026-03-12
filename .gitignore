@@ -120,3 +120,4 @@ bindings/mono/libgpod-sharp/libgpod-sharp.pidb
 .build/*
 /.idea
 /.claude
+.swiftpm

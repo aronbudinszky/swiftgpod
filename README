@@ -1,3 +1,23 @@
+
+Swift API usage:
+
+    import GPod
+
+    // Parse an iPod database
+    let db = try iTunesDB.parse(mountpoint: "/Volumes/iPod")
+
+    // Access tracks
+    for track in db.tracks {
+        print("\(track.artist ?? "?") - \(track.title ?? "?")")
+    }
+
+    // Write changes back
+    try db.write()
+
+Prerequisites installed: pkgconf and libplist via Homebrew.
+
+----------------------------------------------------------------------
+
 libgpod is a library meant to abstract access to an iPod content. It
 provides an easy to use API to retrieve the list of files and playlist
 stored on an iPod, to modify them and to save them back to the iPod.
